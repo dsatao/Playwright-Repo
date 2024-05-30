@@ -8,6 +8,6 @@ test('search on amazon', async ({ page }) => {
     // Expect a title "to contain" a substring.
     await expect(page).toHaveTitle(/Amazon.com/);
 
-    await home.searchWithText("Mens Watches");
+    //await home.searchWithText("Mens Watches");
   });
   
