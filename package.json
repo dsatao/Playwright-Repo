@@ -1,0 +1,14 @@
+{
+  "name": "playwright-repo",
+  "version": "1.0.0",
+  "description": "This is POC repo based on Playwright",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.13"
+  }
+}
