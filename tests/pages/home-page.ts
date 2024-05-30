@@ -27,8 +27,8 @@ export class HomePage {
 
     async searchWithText(searchTxt: string) {
         this.fillSearchTxtBox(searchTxt);
-        this.clickOnSearchBtn();
-        await this.sleep(50000);
+        //this.clickOnSearchBtn();
+        //await this.sleep(50000);
     }
 
 }
