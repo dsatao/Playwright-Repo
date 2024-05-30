@@ -22,13 +22,12 @@ export class HomePage {
        await this.searchTextBox.fill(searchTxt);
     }
     private async clickOnSearchBtn() {
-        await this.searchBtn.click();
+        await this.searchBtn.dblclick();
     }
 
     async searchWithText(searchTxt: string) {
-        this.fillSearchTxtBox(searchTxt);
-        //this.clickOnSearchBtn();
-        //await this.sleep(50000);
+       await this.fillSearchTxtBox(searchTxt);
+        await this.clickOnSearchBtn();
     }
 
 }
