@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/login-page';
 import { HomePage } from '../pages/home-page';
 
-test('search on amazon', async ({ page }) => {
-    const home = new HomePage(page);
-    await home.openAmazonHomePage();
+test('Swag Labs Home Page', async ({ page }) => {
+    const homePage = new HomePage(page);
+    const loginPage = new LoginPage(page);
+    await loginPage.launchLoginPage();
   
     // Expect a title "to contain" a substring.
-    await expect(page).toHaveTitle(/Amazon.com/);
-
-    await home.searchWithText("Mens Watches");
+    await expect(page).toHaveTitle("Swag Labs");
+    await loginPage.loginToApplication("validData");
   });
   
