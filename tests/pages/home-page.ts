@@ -27,12 +27,12 @@ export class HomePage {
         await this.searchTextBox.fill(searchTxt);
     }
     private async clickOnSearchBtn() {
-        //await this.searchBtn.dblclick();
+       // await this.searchBtn.dblclick();
     }
 
     async searchWithText(searchTxt: string) {
         await this.fillSearchTxtBox(searchTxt);
-        await this.clickOnSearchBtn();
+       // await this.clickOnSearchBtn();
     }
 
 }
