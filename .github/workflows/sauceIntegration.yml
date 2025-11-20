@@ -21,7 +21,6 @@ jobs:
           uses: saucelabs/saucectl-run-action@v4
           with:
             working-directory: ../
-            #config-file: .sauce/config.yml
         - name: Install dependencies
           run: npm ci
         - name: Install Playwright Browsers
