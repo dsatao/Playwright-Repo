@@ -16,12 +16,19 @@ export class HomePage {
     async openAmazonHomePage() {
         await this.page.goto("https://www.amazon.com");
     }
+    async beforeTest() {
+        await console.log("Besfore Test")
+    }
+
+    async afterTest() {
+        await console.log("After Test")
+    }
 
     private async fillSearchTxtBox(searchTxt: string) {
         await this.searchTextBox.fill(searchTxt);
     }
     private async clickOnSearchBtn() {
-        await this.searchBtn.dblclick();
+        //await this.searchBtn.dblclick();
     }
 
     async searchWithText(searchTxt: string) {
