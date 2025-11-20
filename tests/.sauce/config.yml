@@ -7,7 +7,7 @@ sauce:
     tags:
       - e2e
       - release team
-      - other tag
+      - chromium
 playwright:
   version: 1.52.0 # See https://docs.saucelabs.com/web-apps/automated-testing/playwright/#supported-testing-platforms for a list of supported versions.
   configFile: ../playwright.config.ts # See https://docs.saucelabs.com/web-apps/automated-testing/playwright/yaml/#configfile for a list of supported configuration files.
