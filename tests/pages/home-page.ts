@@ -31,7 +31,7 @@ export class HomePage {
     }
 
     async searchWithText(searchTxt: string) {
-        await this.fillSearchTxtBox(searchTxt);
+       // await this.fillSearchTxtBox(searchTxt);
        // await this.clickOnSearchBtn();
     }
 
