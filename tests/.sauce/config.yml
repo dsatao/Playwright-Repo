@@ -14,13 +14,13 @@ playwright:
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 suites:
-  - name: "Firefox Win"
+  - name: "Chrome Win"
     platformName: "Windows 11"
     screenResolution: "1440x900"
     testMatch: [".*.ts"]
     params:
-      browserName: "firefox"
-      project: "firefox" # Runs the project that's defined in `playwright.config.js`
+      browserName: "chrome"
+      project: "chromium" # Runs the project that's defined in `playwright.config.js`
  # - name: "Chromium Mac"
  #   platformName: "macOS 12"
  #   screenResolution: "1440x900"
