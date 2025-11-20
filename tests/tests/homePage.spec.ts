@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/login-page';
 import { HomePage } from '../pages/home-page';
 import { beforeEach } from 'node:test';
 import { assert } from 'node:console';

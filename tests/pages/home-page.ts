@@ -3,8 +3,7 @@ import { setMaxIdleHTTPParsers } from "http";
 import { CommonUtils } from "../utils/common-actions";
 export class HomePage {
     readonly page: Page;
-    private searchTextBox: Locator;
-    private searchBtn: Locator;
+
     sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
     constructor(page: Page) {
