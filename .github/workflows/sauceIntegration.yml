@@ -19,8 +19,6 @@ jobs:
   
         - name: Saucectl RUN
           uses: saucelabs/saucectl-run-action@v4
-          with:
-            working-directory: tests
         - name: Install dependencies
           run: npm ci
         - name: Install Playwright Browsers
