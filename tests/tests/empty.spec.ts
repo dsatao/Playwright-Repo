@@ -1,12 +1,11 @@
-import {expect,test} from "@playwright/test";
+import { expect, test } from "@playwright/test";
 
-test.describe('First Describe',async()=>{
-    test('first test',async({page,browser})=>
-    {
-         
+test.describe('First Describe', async () => {
+    test('first test', async ({ page, browser }) => {
+
     });
-    
-    test.beforeAll('before all',async()=>{
- 
+
+    test.beforeAll('before all', async () => {
+
     });
 })
